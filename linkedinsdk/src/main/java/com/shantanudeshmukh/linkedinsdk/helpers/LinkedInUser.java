@@ -3,6 +3,8 @@ package com.shantanudeshmukh.linkedinsdk.helpers;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import androidx.annotation.Nullable;
+
 public class LinkedInUser implements Parcelable {
     private String id;
     private String email;
@@ -88,6 +90,7 @@ public class LinkedInUser implements Parcelable {
         this.lastName = lastName;
     }
 
+    @Nullable
     public String getProfileUrl() {
         return profileUrl;
     }
